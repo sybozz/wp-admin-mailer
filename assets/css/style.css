@@ -1,0 +1,13 @@
+table {
+    border-spacing: 10px;
+    width: 100%;
+}
+
+form#mailer-form input:not([type="submit"]) {
+    padding: 5px;
+    width: 100%;
+}
+
+form#mailer-form label {
+    font-weight: bold;
+}
