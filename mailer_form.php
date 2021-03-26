@@ -42,7 +42,7 @@
             <tr>
                 <td><label for="email-recipients">To <span>*</span></label></td>
                 <td>
-                    <input type="text" id="email-recipients" name="recipients" multiple value="">
+                    <input type="text" id="email-recipients" name="recipients" multiple value="" readonly>
                     <div><small>Email address of selected users or roles, separated by commas.</small></div>
                 </td>
             </tr>
