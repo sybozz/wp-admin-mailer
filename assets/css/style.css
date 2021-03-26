@@ -1,6 +1,10 @@
-table {
+table#amp-form-table {
     border-spacing: 10px;
     width: 100%;
+}
+
+table#amp-form-table tr td {
+    vertical-align: top;
 }
 
 form#mailer-form input:not([type="submit"]) {

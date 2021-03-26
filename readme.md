@@ -1,6 +1,6 @@
 # Admin Mailer
 
-A WordPress plugin for sending emails to the chosen target Users or Role.
+A WordPress plugin for sending emails to the target Users or Roles.
 
 This repository contains the source code of the plugin.
 
@@ -15,7 +15,7 @@ This repository contains the source code of the plugin.
 
 ## Background
 
-This plugin is developed for an assignment of a job interview selection.
+This plugin is developed for an assignment as part of our interview process.
 
 ## Install
 
@@ -23,9 +23,7 @@ To install this plugin just download the repo as zip and upload it into your Wor
 
 ## Setup
 
-This plugin needs `SMTP` configuration either from the `wp-config.php` or via other third party plugin like [WP Mail SMTP by WPForms](https://wordpress.org/plugins/wp-mail-smtp/).
-
-- If you choose to set up SMTP in `wp-config.php`, Set the following constants in `wp-config.php`. These should be added somewhere BEFORE the constant `ABSPATH` is defined.
+This plugin needs the `SMTP` configuration in your `wp-config.php`.
 
 ```
 /*
@@ -42,12 +40,6 @@ define( 'SMTP_SECURE', 'tls' );                 // Encryption system to use - ss
 define( 'SMTP_AUTH',    true );                 // Use SMTP authentication (true|false)
 define( 'SMTP_DEBUG',   0 );                    // for debugging purposes only set to 1 or 2
 ```
-
-### OR
-
-- If you choose third party plugins please follow the instruction there to set up your SMTP.
-
-_These settings are mandatory for sending emails from this plugin._
 
 ## Usage
 

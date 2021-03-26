@@ -5,7 +5,7 @@
 /*
 Plugin Name: Admin Mailer
 Plugin URI: http://sharifio.com/wordpress-plugins/
-Description: A simple plugin for sending email to User or users under a specific Role.
+Description: Send emails to target Users or Role.
 Version: 1.0.0
 Author: Sharif Ahmed
 Author URI: http://sharifio.com/
@@ -41,12 +41,18 @@ if (!class_exists('AdminMailer')) {
             $this->plugin = plugin_basename(__FILE__);
         }
 
+        /**
+         * Register hooks and actions
+         */
         public function register()
         {
             add_action('admin_menu', [$this, 'add_admin_pages']);
             add_action('admin_enqueue_scripts', [$this, 'enqueue']);
         }
 
+        /**
+         * Add menu and pages in admin panel
+         */
         public function add_admin_pages()
         {
             add_menu_page('Admin Mailer', 'Admin Mailer', 'list_users', 'admin_mailer', array(
@@ -54,11 +60,17 @@ if (!class_exists('AdminMailer')) {
             ), 'dashicons-email-alt', 20);
         }
 
+        /**
+         * index page for the plugin
+         */
         public function admin_index()
         {
             require_once plugin_dir_path(__FILE__). 'mailer_form.php';
         }
 
+        /**
+         * Enqueue css and js
+         */
         function enqueue()
         {
             wp_enqueue_style('admin-mailer-style', plugins_url('/assets/css/style.css', __FILE__));
@@ -67,6 +79,7 @@ if (!class_exists('AdminMailer')) {
 
     }
 
+    // init
     $adminMailer = new AdminMailer();
     $adminMailer->register();
 }

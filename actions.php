@@ -2,8 +2,12 @@
 
 isset($_POST['submit']) or die();
 
+/**
+ * @todo
+ * - handle attachment
+ */
+
 // collect form data
-//$from = trim($_POST['from']);
 $recipients = $_POST['recipients'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
