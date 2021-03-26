@@ -8,13 +8,9 @@ This repository contains the source code of the plugin.
 
 - [Background](#background)
 - [Install](#install)
+- [Setup](#Setup)
 - [Usage](#usage)
-    - [Generator](#generator)
-- [Badge](#badge)
-- [Example Readmes](#example-readmes)
-- [Related Efforts](#related-efforts)
 - [Maintainers](#maintainers)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Background
@@ -71,7 +67,7 @@ This email sending action trigger the `wp_mail` function to send all the emails.
 
 ## Maintainers
 
-[@sybozz](https://github.com/sybozz).
+[@sybozz](https://github.com/sybozz)
 
 ## License
 
